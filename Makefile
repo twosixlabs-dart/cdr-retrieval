@@ -1,6 +1,6 @@
-IMAGE_PREFIX = twosixlabsdart/
+IMAGE_PREFIX = twosixlabsdart
 IMAGE_NAME = cdr-retrieval
-IMG := $(IMAGE_PREFIX)$(IMAGE_NAME)
+IMG := $(IMAGE_PREFIX)/$(IMAGE_NAME)
 
 ifndef GITHUB_REF_NAME
 	APP_VERSION := "latest"
@@ -15,12 +15,11 @@ endif
 docker-login:
 	docker login -u ${DOCKER_HUB_USERNAME} -p ${DOCKER_HUB_PASSWORD}
 
-docker-logout:
-	docker logout
 
 docker-build:
 	sbt clean assembly
 	docker build -t $(IMG):$(APP_VERSION) .
 
-docker-push: docker-login docker-build docker-logout
+docker-push: docker-login docker-build
 	docker push $(IMG):$(APP_VERSION)
+	docker logout
