@@ -1,5 +1,6 @@
 package com.twosixlabs.dart.cdr.retrieval.controllers
 
+import annotations.WipTest
 import com.twosixlabs.cdr4s.annotations.{FacetScore, OffsetTag}
 import com.twosixlabs.cdr4s.core.{CdrAnnotation, CdrDocument, CdrFormat, CdrMetadata, DictionaryAnnotation, FacetAnnotation, OffsetTagAnnotation, TextAnnotation}
 import com.twosixlabs.cdr4s.json.dart.DartJsonFormat
@@ -10,7 +11,6 @@ import com.twosixlabs.dart.auth.user.DartUser
 import com.twosixlabs.dart.cdr.retrieval.exceptions.CdrNotFoundException
 import com.twosixlabs.dart.cdr.retrieval.services.CdrDatastore
 import com.twosixlabs.dart.test.base.StandardTestBase3x
-import com.twosixlabs.dart.test.tags.annotations.WipTest
 import org.scalatra.test.scalatest.ScalatraSuite
 import org.slf4j.{Logger, LoggerFactory}
 

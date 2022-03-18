@@ -11,11 +11,11 @@ object Dependencies {
     val jacksonVersion = "2.10.5"
     val s3mockVersion = "0.2.6"
 
-    val cdr4sVersion = "3.0.256"
-    val dartCommonsVersion = "3.0.290"
-    val arangoDatastoreRepoVersion = "3.0.17"
-    val dartAuthVersion = "3.1.159"
-    val dartRestCommonsVersion = "3.0.15"
+    val cdr4sVersion = "3.0.9"
+    val dartCommonsVersion = "3.0.30"
+    val arangoDatastoreRepoVersion = "3.0.8"
+    val dartAuthVersion = "3.1.11"
+    val dartRestCommonsVersion = "3.0.4"
 
     val gsonOverrideVersion = "2.8.6"
 
