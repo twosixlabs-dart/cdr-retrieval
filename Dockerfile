@@ -1,6 +1,6 @@
 FROM twosixlabsdart/java-fatjar-runner:latest
 
-LABEL maintainer="john.hungerford@twosixlabs.com"
+LABEL maintainer="john.hungerford@twosixtech.com"
 
 ENV SCALA_VERSION '2.12'
 
